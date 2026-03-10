@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dog API</title>
+    <title>Dog API Demo</title>
 </head>
+
 <body>
 
 <h1>Random Dog</h1>
 
 <img src="{{ image_url }}" width="400">
 
-<br><br>
+<form action="/save" method="POST">
+    <input type="hidden" name="image_url" value="{{ image_url }}">
+    <button type="submit">Save Dog</button>
+</form>
+
+<br>
 
 <a href="/">Load another dog</a>
 
