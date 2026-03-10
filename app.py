@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import psycopg2
 
-# load environment variables
+# load environment variablesss
 load_dotenv()
 
 app = Flask(__name__)
