@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="66dfaae6-8a30-413a-bf09-a560da3247b9" name="Changes" comment="Codespace set up (docker, github, env, database, api key, read me)">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,15 +170,7 @@
       <option name="project" value="LOCAL" />
       <updated>1773850089109</updated>
     </task>
-    <task id="LOCAL-00007" summary="Codespace set up (docker, github, env, database, api key, read me)">
-      <option name="closed" value="true" />
-      <created>1773850684851</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1773850684851</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +194,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Semester2IS209$Semester2IS209.coverage" NAME="Semester2IS209 Coverage Results" MODIFIED="1773850805081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Semester2IS209$Semester2IS209.coverage" NAME="Semester2IS209 Coverage Results" MODIFIED="1773135272244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
