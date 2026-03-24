@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify
 import requests
 import os
 from dotenv import load_dotenv
 import psycopg2
 
-# load environment variablesss
+# load environment variables
 load_dotenv()
 
 app = Flask(__name__)
@@ -21,7 +21,6 @@ def get_db_connection():
 # homepage - get random dog
 @app.route("/")
 def index():
-
     url = "https://api.thedogapi.com/v1/images/search"
 
     headers = {
@@ -39,7 +38,6 @@ def index():
 # save dog image URL to database
 @app.route("/save", methods=["POST"])
 def save():
-
     image_url = request.form["image_url"]
 
     conn = get_db_connection()
@@ -64,31 +62,29 @@ def health():
     try:
         conn = get_db_connection()
         conn.close()
-        return {"status": "ok", "database": "connected"}
-    except:
-        return {"status": "error", "database": "not reachable"}, 500
+        return jsonify({"status": "ok", "database": "connected"}), 200
+    except Exception as e:
+        return jsonify({"status": "error", "database": "not reachable"}), 500
 
 
 # status endpoint (diagnostics)
 @app.route("/status")
 def status():
-
     db_status = "unknown"
 
     try:
         conn = get_db_connection()
         conn.close()
         db_status = "connected"
-    except:
+    except Exception as e:
         db_status = "error"
 
-    return {
+    return jsonify({
         "service": "Dog API Demo",
         "app": "running",
         "database": db_status
-    }
-
+    }), 200
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
