@@ -1,97 +1,14 @@
+# Environment variables
 .env
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>🐶 Random Dog</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #74ebd5, #acb6e5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
 
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            text-align: center;
-            width: 400px;
-        }
+.idea/
+*.iml
 
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
 
-        img {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
+.venv/
+__pycache__/
+*.pyc
 
-        button, .reload-btn {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 5px;
-            transition: 0.3s;
-        }
 
-        button {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .reload-btn {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #2196F3;
-            color: white;
-        }
-
-        .reload-btn:hover {
-            background-color: #1976D2;
-        }
-
-        .footer {
-            margin-top: 15px;
-            font-size: 12px;
-            color: #888;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-    <h1>🐶 Random Dog</h1>
-
-    <img src="{{ image_url }}" alt="Random Dog">
-
-    <form action="/save" method="POST">
-        <input type="hidden" name="image_url" value="{{ image_url }}">
-        <button type="submit">💾 Save Dog</button>
-    </form>
-
-    <a href="/" class="reload-btn">🔄 Load Another Dog</a>
-
-    <div class="footer">
-        Powered by Dog API 🐾
-    </div>
-</div>
-
-</body>
-</html>
+.DS_Store
