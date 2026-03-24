@@ -1,19 +1,17 @@
-# Use a lightweight Python image
 FROM python:3.11-slim
 
-# Set working directory inside container
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
 
-# Copy project files into container
-COPY . .
-
-# Install Python dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose Flask port
+COPY . .
+
 EXPOSE 5000
 
-# Run the Flask app
 CMD ["python", "app.py"]
 
 
