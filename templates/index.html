@@ -1,131 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog API Demo</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #fdfbfb, #ebedee);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #222;
-        }
-
-        .card {
-            background: white;
-            width: 90%;
-            max-width: 650px;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-            padding: 30px;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 2rem;
-            color: #333;
-        }
-
-        p.subtitle {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .success {
-            background: #e8fff0;
-            color: #1b7a3d;
-            border: 1px solid #b7ebc6;
-            padding: 12px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .dog-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 15px 0 20px;
-            color: #444;
-        }
-
-        img {
-            width: 100%;
-            max-height: 420px;
-            object-fit: cover;
-            border-radius: 14px;
-            border: 1px solid #eee;
-            margin-bottom: 20px;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        button,
-        a.button-link {
-            border: none;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.2s ease;
-            display: inline-block;
-        }
-
-        button {
-            background: #ff6b6b;
-            color: white;
-        }
-
-        button:hover {
-            background: #e85a5a;
-        }
-
-        a.button-link {
-            background: #4d96ff;
-            color: white;
-        }
-
-        a.button-link:hover {
-            background: #3d7fe0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Dog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="card">
-        <h1>Random Dog</h1>
-        <p class="subtitle">Fetch a random dog and save your favorites.</p>
 
-        {% if saved %}
-            <div class="success">Dog saved successfully.</div>
-        {% endif %}
+  <div class="background-circle circle-one"></div>
+  <div class="background-circle circle-two"></div>
 
-        <img src="{{ image_url }}" alt="Random Dog">
+  <div class="container">
 
-        <div class="dog-name">{{ dog_name }}</div>
+    <div class="main-card">
+      <div class="small-tag">Dog Gallery App</div>
 
+      <h1>🐶 Random Dog</h1>
+      <p class="subtitle">Fetch a random dog and save your favourites</p>
+
+      <div class="image-box">
+        <img src="{{ dog_image }}" alt="dog" class="dog-img">
+      </div>
+
+      <h2>{{ dog_name if dog_name else "Unknown Dog" }}</h2>
+
+      <div class="buttons">
         <form action="/save" method="POST">
-            <input type="hidden" name="image_url" value="{{ image_url }}">
-            <input type="hidden" name="dog_name" value="{{ dog_name }}">
-            <div class="button-group">
-                <button type="submit">Save Dog</button>
-                <a class="button-link" href="/">Load Another Dog</a>
-            </div>
+          <input type="hidden" name="dog_image" value="{{ dog_image }}">
+          <input type="hidden" name="dog_name" value="{{ dog_name if dog_name else 'Unknown Dog' }}">
+          <button type="submit" class="save-btn">Save Dog</button>
         </form>
+
+        <form action="/" method="GET">
+          <button type="submit" class="load-btn">Load Another</button>
+        </form>
+      </div>
     </div>
+
+    <div class="saved-section">
+      <div class="saved-top">
+        <h3>Saved Dogs</h3>
+        <span class="count-box">{{ saved_dogs|length }} saved</span>
+      </div>
+
+      {% if saved_dogs %}
+        <div class="saved-grid">
+          {% for dog in saved_dogs %}
+            <div class="saved-card">
+              <img src="{{ dog.image }}" alt="{{ dog.name }}">
+              <div class="saved-info">
+                <p>{{ dog.name }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="empty-box">
+          <p>No dogs saved yet.</p>
+        </div>
+      {% endif %}
+    </div>
+
+  </div>
+
 </body>
 </html>
