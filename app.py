@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -20,7 +21,6 @@ def index():
         saved_dogs=saved_dogs
     )
 
-
 @app.route("/save", methods=["POST"])
 def save():
     dog_image = request.form.get("dog_image")
@@ -34,6 +34,10 @@ def save():
 
     return redirect("/")
 
+@app.route("/health")
+def health():
+    return {"status": "OK"}, 200
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
