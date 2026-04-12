@@ -2,7 +2,7 @@ README File
 
 IS2209 Group Project: Our Random dog generator
 
-We used: Flask, PostgreSQL, Dog API, Docker, GitHub, Render.
+We used: Flask, PostgreSQL, Dog API, Docker, GitHub and Render.
 
 For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps, and collaborative software development principles.
 
@@ -57,6 +57,26 @@ Never upload your .env file to GitHub as it can include private information. It 
 
 
 
+
+(CI/CD) Pipeline
+We used a Continuous Integration and Continuous Deployment (CI/CD) method throughout this project. This means that every time we pushed our code to GitHub, it automatically checked for errors before being merged into the main branch. This allowed us to catch our mistakes early on rather than letting them catch up with us.
+How our pipeline worked:
+GitHub: Systematically checked our code every time we made a change, making sure everything was working correctly before it was merged.
+Docker: We used a Dockerfile to ensure our application ran the same way in every environment.
+Render: Once the code was pushed and pulled into the main branch it was merged. Render automatically deployed the updated version of the app so it was live online.
+
+
+
+
+
+
+
+
+
+
+
+
+
 Our team: 
 Eabha Curran: Coordinated the project while managing technical setup tasks. E.g. linking team members to the GitHub repository and handling deployment using Render.  (GitHub@eabhacurran)
 
@@ -69,7 +89,9 @@ Samio Alam: Mainly focused on frontend development, including the CSS layout, re
 Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently 
 
 
-
+Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently in the Boole. We followed Agile and DevOps principles by breaking the work down step by step, testing continuously, and integrating changes consistently rather than being stressed before the project deadline.
+Branching strategy: Version control, each change we made to the code was tracked on GitHub and saved. Every member pulled and pushed requests to stay in sync.
+CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automatically.  Each time we added a new piece of code to the main project, GitHub automatically checked it for mistakes and then pushed the updated version of our application on Render without us having to do it manually. This saved us a great amount of time.
 
 
 
