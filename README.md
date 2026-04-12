@@ -10,14 +10,23 @@ Deployment URL:
 Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below.
 
 Table of Contents:
+
 Features
- Tools and technologies 
+
+Tools and technologies 
+
 Running the project 
+
 Application settings
+
 How the app works
+
 CI/CD Pipeline
+
 Architecture Overview
-Team
+
+Our Team
+
 External Sources
 
 Features:
@@ -78,6 +87,7 @@ Render: Once the code was pushed and pulled into the main branch it was merged. 
 
 
 Our team: 
+
 Eabha Curran: Coordinated the project while managing technical setup tasks. E.g. linking team members to the GitHub repository and handling deployment using Render.  (GitHub@eabhacurran)
 
 Niamh 	McNabola: Focused on configuration and the development environment as she worked with Docker and managing project dependencies, ensuring consistency across systems. (  GitHub@niamhmcnabola )
