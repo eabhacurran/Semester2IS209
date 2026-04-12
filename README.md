@@ -86,10 +86,9 @@ Grace Nagle: Contributed through backend support and testing. Making the kanban 
 
 Samio Alam: Mainly focused on frontend development, including the CSS layout, responsiveness and UI improvements to enhance the usability and appearance of our application.( GitHub@123437232-sami ) 
  
-Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently 
+Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently in the Boole.
 
-
-Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently in the Boole. We followed Agile and DevOps principles by breaking the work down step by step, testing continuously, and integrating changes consistently rather than being stressed before the project deadline.
+We followed Agile and DevOps principles by breaking the work down step by step, testing continuously, and integrating changes consistently rather than being stressed before the project deadline.
 Branching strategy: Version control, each change we made to the code was tracked on GitHub and saved. Every member pulled and pushed requests to stay in sync.
 CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automatically.  Each time we added a new piece of code to the main project, GitHub automatically checked it for mistakes and then pushed the updated version of our application on Render without us having to do it manually. This saved us a great amount of time.
 
