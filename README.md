@@ -1,11 +1,13 @@
 README File 
+
 IS2209 Group Project: Our Random dog generator
+
 We used: Flask, PostgreSQL, Dog API, Docker, GitHub, Render.
 
 For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps, and collaborative software development principles.
 
 Deployment URL:
-Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below.
+Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below. 
 
 Table of Contents:
 Features
