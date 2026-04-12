@@ -6,7 +6,6 @@ We used: Flask, PostgreSQL, Dog API, Docker, GitHub and Render.
 
 For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps, and collaborative software development principles.
 
-Deployment URL:
 Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below.
 
 Table of Contents:
@@ -64,6 +63,11 @@ We have included a .env.example file in the repository to show you what it shoul
 Never upload your .env file to GitHub as it can include private information. It is already included in the .gitignore file so it can't be shared accidentally.
 
 
+How the app works: 
+Our app is a single page web application. When you open it you are presented with a random generated image of different breeds of dogs. Users are faced with two options:
+Click "Load Another" to get a brand new random dog image.
+Click "Save Dog" to save the image to your database.
+Any dogs you have saved will appear in the Saved Dogs section at the bottom of the page. These are stored in our Supabase PostgreSQL database so they are saved even if you close the app and come back later.
 
 
 
@@ -73,17 +77,6 @@ How our pipeline worked:
 GitHub: Systematically checked our code every time we made a change, making sure everything was working correctly before it was merged.
 Docker: We used a Dockerfile to ensure our application ran the same way in every environment.
 Render: Once the code was pushed and pulled into the main branch it was merged. Render automatically deployed the updated version of the app so it was live online.
-
-
-
-
-
-
-
-
-
-
-
 
 
 Our team: 
@@ -104,8 +97,26 @@ CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automa
 
 
 
+Sources:
+
+PostgreSQL database: Supabase (supabase.com)
+
+Where our code is stored: GitHub (github.com)
+
+Where we wrote our code:  PyCharm (jetbrains.com/pycharm)
+
+Hosting our live application:  Render (render.com)
+
+Containerising our app Docker: Docker Desktop (docker.com/products/docker-desktop)
+
+Dog CEO API:   (dog.ceo/dog-api) 
+
+Flask: Web framework
 
 
+
+
+Render Link: https://semester2is209.onrender.com/
 
 
 
