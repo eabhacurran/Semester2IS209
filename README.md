@@ -7,7 +7,7 @@ We used: Flask, PostgreSQL, Dog API, Docker, GitHub, Render.
 For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps, and collaborative software development principles.
 
 Deployment URL:
-Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below
+Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below.
 
 Table of Contents:
 Features
@@ -64,7 +64,7 @@ Niamh 	McNabola: Focused on configuration and the development environment as she
 
 Grace Nagle: Contributed through backend support and testing. Making the kanban board and README File ( GitHub@124430654-ctrl )	
 
-Samio mainly focused on frontend development, including the CSS layout, responsiveness and UI improvements to enhance the usability and appearance of our application.( GitHub@123437232-sami ) 
+Samio Alam: Mainly focused on frontend development, including the CSS layout, responsiveness and UI improvements to enhance the usability and appearance of our application.( GitHub@123437232-sami ) 
  
 Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently 
 
