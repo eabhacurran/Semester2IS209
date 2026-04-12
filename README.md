@@ -11,7 +11,7 @@ Our web application shows a random dog image with buttons for the options of "Sa
 
 Table of Contents:
 Features
-Tools and technologies 
+ Tools and technologies 
 Running the project 
 Application settings
 How the app works
