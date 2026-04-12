@@ -10,25 +10,25 @@ Our web application shows a random dog image with buttons for the options of "Sa
 
 Table of Contents:
 
-Features
+1. Features
 
-Tools and technologies 
+2. Tools and technologies 
 
-Running the project 
+3. Running the project 
 
-Application settings
+4. Application settings
 
-How the app works
+5. How the app works
 
-CI/CD Pipeline
+6. CI/CD Pipeline
 
-Architecture Overview
+7. Our Team
 
-Our Team
+8. External Sources
 
-External Sources
+    
 
-Features:
+1. Features:
 Get a random dog image from the Dog API.
 Save and retrieve your favourite dogs from a PostgreSQL database, we used Supabase.
 You can browse through your saved dogs.
@@ -37,7 +37,7 @@ Graceful error handling with retry/back-off when upstream API is unavailable.
 There is structured logging with request IDs and timing.
 
 
-Tools and technologies :
+2. Tools and technologies :
 We used Flask (Python) to run our app.
 To store the saved dogs we used PostgreSQL (Supabase)
 To get the dog images we used a Dog API.
@@ -47,7 +47,7 @@ We used PyCharm as our location to write the code.
 Render Deploys and hosts our application so that it can be found online.
 
 
-Running the project: 
+3. Running the project: 
 To run our project on your own computer, follow these steps:
 Firstly, make sure you have Python(PyCharm) and Docker installed on your computer.
 Download the project from GitHub by cloning the repository:
@@ -57,13 +57,13 @@ Install the required dependencies by running pip install -r requirements.txt int
 Start the app by running flask run in your local terminal. You can then open your browser and go to http://localhost:5000 to see it running.
 
 
-Application settings: 
+4. Application settings: 
 To run this app you will need to create a .env file in the project folder. This file stores all of the private information the application needs to run, such as your database password and API details.
 We have included a .env.example file in the repository to show you what it should look like. Simply copy it, rename it to (.env) and fill in your own details.
 Never upload your .env file to GitHub as it can include private information. It is already included in the .gitignore file so it can't be shared accidentally.
 
 
-How the app works: 
+5. How the app works: 
 Our app is a single page web application. When you open it you are presented with a random generated image of different breeds of dogs. Users are faced with two options:
 Click "Load Another" to get a brand new random dog image.
 Click "Save Dog" to save the image to your database.
@@ -71,7 +71,7 @@ Any dogs you have saved will appear in the Saved Dogs section at the bottom of t
 
 
 
-(CI/CD) Pipeline
+6. (CI/CD) Pipeline
 We used a Continuous Integration and Continuous Deployment (CI/CD) method throughout this project. This means that every time we pushed our code to GitHub, it automatically checked for errors before being merged into the main branch. This allowed us to catch our mistakes early on rather than letting them catch up with us.
 How our pipeline worked:
 GitHub: Systematically checked our code every time we made a change, making sure everything was working correctly before it was merged.
@@ -79,7 +79,7 @@ Docker: We used a Dockerfile to ensure our application ran the same way in every
 Render: Once the code was pushed and pulled into the main branch it was merged. Render automatically deployed the updated version of the app so it was live online.
 
 
-Our team: 
+7. Our team: 
 
 Eabha Curran: Coordinated the project while managing technical setup tasks. E.g. linking team members to the GitHub repository and handling deployment using Render.  (GitHub@eabhacurran)
 
@@ -97,7 +97,7 @@ CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automa
 
 
 
-Sources:
+8. Sources:
 
 PostgreSQL database: Supabase (supabase.com)
 
