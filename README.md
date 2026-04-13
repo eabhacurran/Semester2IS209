@@ -2,8 +2,11 @@ README File
 
 IS2209 Group Project (Group 18 )
 Student numbers: Niamh Mcnabola 124381111
+
 Grace Nagle 124430654
+
 Eabha Curran 124484136
+
 Saimo Alam 123437232
 
 
