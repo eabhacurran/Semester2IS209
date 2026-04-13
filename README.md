@@ -14,6 +14,7 @@ Saimo Alam 123437232
 
 
 
+
 Our Random dog generator
 
 We used: Flask, PostgreSQL, Dog API, Docker, GitHub and Render.
