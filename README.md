@@ -2,16 +2,14 @@ README File
 
 IS2209 Group Project (Group 18 )
 
-Student numbers: Niamh Mcnabola 124381111
+Student numbers: 
+Niamh Mcnabola 124381111
 
 Grace Nagle 124430654
 
 Eabha Curran 124484136
 
-Saimo Alam 123437232
-
-
-
+Samio Alam 123437232
 
 
 
@@ -19,9 +17,12 @@ Our Random dog generator
 
 We used: Flask, PostgreSQL, Dog API, Docker, GitHub and Render.
 
-For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps, and collaborative software development principles.
+For our IS2209 group project, we created a web application that fetches random dog images from an external Dog API. 
+Users can save their favourite dogs, which are stored in a Supabase PostgreSQL database. We have applied Agile, DevOps 
+and collaborative software development principles.
 
-Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that have been saved appear in the saved Dogs section below.
+Our web application shows a random dog image with buttons for the options of "Save Dog" and "Load Another”. Dogs that 
+have been saved appear in the saved Dogs section below.
 
 Table of Contents:
 
@@ -104,19 +105,28 @@ Render: Once the code was pushed and pulled into the main branch it was merged. 
 
 Our team: 
 
-Eabha Curran: Coordinated the project while managing technical setup tasks. E.g. linking team members to the GitHub repository and handling deployment using Render.  (GitHub@eabhacurran)
+Eabha Curran: Coordinated the project while managing technical setup tasks. E.g. linking team members to the GitHub 
+repository and handling deployment using Render.  (GitHub@eabhacurran)
 
-Niamh 	McNabola: Focused on configuration and the development environment as she worked with Docker and managing project dependencies, ensuring consistency across systems. (  GitHub@niamhmcnabola )
+Niamh 	McNabola: Focused on configuration and the development environment as she worked with Docker and managing 
+project dependencies, ensuring consistency across systems. (  GitHub@niamhmcnabola )
 
-Grace Nagle: Contributed through backend support and testing. Making the kanban board and README File ( GitHub@124430654-ctrl )	
+Grace Nagle: Contributed through backend support and testing. Making the kanban board and README File 
+( GitHub@124430654-ctrl )	
 
-Samio Alam: Mainly focused on frontend development, including the CSS layout, responsiveness and UI improvements to enhance the usability and appearance of our application.( GitHub@123437232-sami ) 
+Samio Alam: Mainly focused on frontend development, including the CSS layout, responsiveness and UI improvements to 
+enhance the usability and appearance of our application.( GitHub@123437232-sami ) 
  
-Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout development of our application.  We worked together in lab sessions with help from our tutors and met up frequently in the Boole.
+Each team member contributed to pushing and pulling requests, collaboration and supporting each other throughout 
+development of our application.  We worked together in lab sessions with help from our tutors and met up frequently in 
+the Boole.
 
-We followed Agile and DevOps principles by breaking the work down step by step, testing continuously, and integrating changes consistently rather than being stressed before the project deadline.
-Branching strategy: Version control, each change we made to the code was tracked on GitHub and saved. Every member pulled and pushed requests to stay in sync.
-CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automatically.  Each time we added a new piece of code to the main project, GitHub automatically checked it for mistakes and then pushed the updated version of our application on Render without us having to do it manually. This saved us a great amount of time.
+We followed Agile and DevOps principles by breaking the work down step by step, testing continuously, and integrating 
+changes consistently rather than being stressed before the project deadline.
+Branching strategy: Version control, each change we made to the code was tracked on GitHub and saved. Every member 
+pulled and pushed requests to stay in sync.
+CI/CD: GitHub Actions ensured each merge to main was tested, and deployed automatically.  Each time we added a new piece
+of code to the main project, GitHub automatically checked it for mistakes and then pushed the updated version of our application on Render without us having to do it manually. This saved us a great amount of time.
 
 
 
@@ -135,8 +145,6 @@ Containerising our app Docker: Docker Desktop (docker.com/products/docker-deskto
 Dog CEO API:   (dog.ceo/dog-api) 
 
 Flask: Web framework
-
-
 
 
 Render Link: https://semester2is209.onrender.com/
